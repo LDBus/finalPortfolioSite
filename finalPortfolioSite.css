@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box; /* height and width including padding and border */
+}
+
+body {
+  font-family: 'Quicksand', 'Quicksand', 'sans-serif';
+  margin: 0;
+  background: lightYellow;
+}
+
+h1, h2, h3 {
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 250;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+header h3{
+    margin-top: 5px;
+}
+
+
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  align-items: center; /* Orientation of logo  */
+}
+
+.logo {
+  height: 95px;
+  width: auto;
+  margin-right: auto;
+}
+
+
+.subHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+hr {
+  background-color: #7d97ad;
+  max-width: 1000px;
+  margin-bottom: 1.5em;
+  height: 4px;
+}
+
+.main_picture {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+  margin-right: auto;
+}
+
+
+.container { /* Styles the main only*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.featuredWork {
+  width: 100%;
+  text-align: left;
+  color: #7d97ad;
+}
+
+
+.featuredWorkContainer {/* Styles the project section only*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+.project {
+  width: 330px;
+  height: auto;
+}
+
+.project p, h3 {
+  text-align: center;
+}
+
+
+.project_picture {/*Project images are scaled down*/
+  width: 95%;
+  height: 250px;
+}
+
+/*
+@media screen and (max-width: 640px) {/*Mobile*/
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+  font-size: 1.4em;
+  }
+
+  h3 {
+  font-size: 1.2em;
+  }
+.logo {
+    height: 60px;
+    width: auto;
+  }
+
+  header {
+    margin: 0 1.5em 0 0.5em;
+  }
+
+  header, .container {
+    max-width: 100%;
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+
+
+  .featuredWorkContainer {
+    margin: 1.5em 0 0 0;
+  }
+
+  .featuredWork {
+    width: 320px;
+    margin: 10px auto 0 auto;
+  }
+
+
+  .project {
+    width: 350px;
+    height: auto;
+    /* Top, left/right, bottom. Centers projects (aligned left otherwise) */
+    margin: 0 auto 1.2em;
+  }
+
+
+  .project_picture {
+    width: 95%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1024px){/*Tablet*/
+    h1 {
+    font-size: 1.8em;
+  }
+}
+
+
+@media screen and (min-width: 1024px){/*Desktop*/
+    h1 {
+    font-size: 2.2em;
+  }
+}
+
+
+h1, h2, h3 {
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+
+h1 {
+  font-weight: 250;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+
+header h3{
+    margin-top: 5px;
+}
+
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  align-items: center; /* Orientation of logo  */
+}
+
+
+.logo {
+  height: 95px;
+  width: auto;
+  margin-right: auto;
+}
+
+
+.header_label {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+hr {
+  background-color: #7d97ad;
+  max-width: 1000px;
+  margin-bottom: 1.5em;
+  height: 4px;
+}
+
+.main_picture {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+  margin-right: auto;
+}
+
+
+.container {/* Styles the main only*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.featuredWork {
+  width: 100%;
+  text-align: left;
+  color: #7d97ad;
+}
+
+
+.featuredWorkContainer {/* Styles the project section only*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+.project {
+  width: 330px;
+  height: auto;
+}
+
+.project p, h3 {
+  text-align: center;
+}
+
+
+/*Project images are scaled down*/
+.project_picture {
+  width: 95%;
+  height: 250px;
+}
+
+
+@media screen and (max-width: 750px) {/*Mobile*/
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+  font-size: 1.4em;
+  }
+
+  h3 {
+  font-size: 1.2em;
+  }
+
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+
+  header {
+    margin: 0 1.5em 0 0.5em;
+  }
+
+  header, .container {
+    max-width: 100%;
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+
+  .featuredWorkContainer {
+    margin: 1.5em 0 0 0;
+  }
+
+  .featuredWork {
+    width: 320px;/* Increased width by 20px */
+    margin: 10px auto 0 auto;
+  }
+
+  .project {
+    width: 350px;
+    height: auto;
+    /* Top, left/right, bottom. Centers projects (aligned left otherwise) */
+    margin: 0 auto 1.2em;
+  }
+
+  /* Images scaled down resolution of pics */
+  .project_picture {
+    width: 95%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1024px){/*Tablet*/
+    h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1024px){/*Desktop*/
+    h1 {
+    font-size: 2.2em;
+  }
+}
